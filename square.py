@@ -4,8 +4,10 @@ def area(a):
 #	Параметры:
 #		a(int) :  длина стороны квадрата 
 #	Пример: area(10) = 100
-
-    return a * a
+    if a >= 0:
+        return a * a
+    else:
+        raise ValueError('Сторона квадрата не может быть отрицательной')
 
 
 def perimeter(a):
@@ -13,5 +15,7 @@ def perimeter(a):
 #	Параметры:
 #		a(int) :  длина стороны квадрата 
 #	Пример: perimeter(10) = 40
-
-    return 4 * a
+    if a >= 0:
+        return 4 * a
+    else:
+        raise ValueError('Сторона квадрата не может быть отрицательной')
