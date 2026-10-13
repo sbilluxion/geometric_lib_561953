@@ -1,4 +1,4 @@
-import math
+from math import pi
 
 
 def area(r):
@@ -6,8 +6,10 @@ def area(r):
 #	Параметры:
 #		r: радиус окружности
 #	Пример: area(10) = 314.1592653589793	
-
-    return math.pi * r * r
+    if r >= 0:
+        return pi * r * r
+    else:
+        raise ValueError('Радиус должен быть неотрицательным')
 
 
 def perimeter(r):
@@ -16,5 +18,8 @@ def perimeter(r):
 #		r: радиус окружности
 #	Пример: perimeter(10) = 62.83185307179586
 #
-    return 2 * math.pi * r
+    if r >= 0:
+        return 2 * pi * r
+    else:
+        raise ValueError('Радиус должен быть неотрицательным')
 
