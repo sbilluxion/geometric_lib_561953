@@ -23,8 +23,8 @@ Each file has **two** functions in it:
 
 Each function has a brief description about it's work and how to use it
 
->[TIP!]
->Execute [tests.py](../tests/tests.py) to check functions' workability
+> [!TIP]
+> Execute [tests.py](../tests/tests.py) to check functions' workability
 
 ## Area function
 
