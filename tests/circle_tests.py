@@ -59,6 +59,6 @@ class CircleTestCase(unittest.TestCase):
     def test_small_perimeter(self):
         res = perimeter(0.001)
         self.assertAlmostEqual(res, 0.002 * pi)
-    # def test_error_perimeter(self):
-    #         res = perimeter(0.005)
-    #         self.assertAlmostEqual(res, 0.002 * pi)
+    def test_error_perimeter(self):
+            res = perimeter(0.005)
+            self.assertAlmostEqual(res, 0.002 * pi)
